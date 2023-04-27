@@ -1,5 +1,6 @@
 document.getElementById('crack').addEventListener('click', crackOpen);
 
+//Find a way to randomize messages
 const fortuneGenerator = () => {
     
     let randomNumber = Math.floor(Math.random() * 25);
@@ -86,18 +87,43 @@ const fortuneGenerator = () => {
     }
 } 
 
+const fcBtn = document.querySelector("button");
+const fortuneText = document.querySelector(".fc-fortune-text");
+
+//Button that is linked to the Fortune Cookie 
 function crackOpen(){
-    
-    const fortuneDisplay = document.getElementById('cookie');
-    const fortune = fortuneGenerator();
 
-   
-    if (fortuneDisplay.innerHTML !== '') {
-        fortuneDisplay.innerHTML = '';
-      }else{
-        fortuneDisplay.innerHTML = fortune;
-
-      }
+    fcBtn.click();
 
 }
 
+
+
+//Display messages to the DOM, specifically the Fortune text area
+getFortune = function(){
+    
+    fortuneText.innerHTML = fortuneGenerator();
+    
+}
+
+//Functionality to make CSS animations open and close Fortune Cookie
+nextState = function(){
+    let elClass = this.classList,
+        spawned = "spawned",
+        opened = "opened";
+
+    // open cookie
+    if (elClass.contains(spawned)) {
+        elClass.remove(spawned);
+        elClass.add(opened);
+
+    // new cookie
+    } else {
+        elClass.remove(opened);
+        elClass.add(spawned);
+        getFortune();
+    }
+};
+
+getFortune();
+fcBtn.addEventListener("click",nextState);
