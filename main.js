@@ -90,16 +90,12 @@ const fortuneGenerator = () => {
 const fcBtn = document.querySelector("button");
 const fortuneText = document.querySelector(".fc-fortune-text");
 
+
 //Button that is linked to the Fortune Cookie 
 function crackOpen(){
 
     fcBtn.click();
-//Toggle from Crack Open to Crack Another after button click
-    if(document.getElementById('crack').innerHTML == 'Crack Another'){
-        document.getElementById('crack').innerText = 'Crack Open'
-    } else{
-        document.getElementById('crack').innerHTML = 'Crack Another'
-    }
+
 }
 
 
@@ -121,11 +117,13 @@ nextState = function(){
     if (elClass.contains(spawned)) {
         elClass.remove(spawned);
         elClass.add(opened);
+        document.getElementById('crack').innerHTML = 'Crack Another'
 
     // new cookie
     } else {
         elClass.remove(opened);
         elClass.add(spawned);
+        document.getElementById('crack').innerText = 'Crack Open'
         getFortune();
     }
 };
