@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Number Guesser</title>
 </head>
 <body>
+<div class="elements">
+    <h1>Fortune Cookie</h1>
+    <p>Destiny lies within each fortune cookie. Have a peek at yours!</p>
+    <h3>Ask the Cookie</h3>
+</div>
     
-<h1>Fortune Cookie</h1>
 
-<p>Destiny lies within each fortune cookie. Have a peek at yours!</p>
+    <button class="fc spawned" type="button">
+        <div class="fc-part left"></div>
+        <div class="fc-part right"></div>
+        
+        <div class="fc-fortune">
+            <p class="fc-fortune-text">No fortune</p>
+            
+        </div>
+    </button>
 
-<h3>Ask the Cookie</h3>
+<div class="container">
+    <div class="inside">
+        <button class="crack" id="crack">Crack Open</button>
+    </div>
+</div>
+    
 
-<h2 class="cookie" id="cookie"></h2>
-
-<button class="crack" id="crack">Crack Open</button>
 
     <script src="main.js"></script>
 </body>
