@@ -95,10 +95,10 @@ function crackOpen(){
 
     fcBtn.click();
 //Toggle from Crack Open to Crack Another after button click
-    if(document.getElementById('crack').innerHTML == 'Crack Open'){
-        document.getElementById('crack').innerText = 'Crack Another'
+    if(document.getElementById('crack').innerHTML == 'Crack Another'){
+        document.getElementById('crack').innerText = 'Crack Open'
     } else{
-        document.getElementById('crack').innerHTML = 'Crack Open'
+        document.getElementById('crack').innerHTML = 'Crack Another'
     }
 }
 
