@@ -333,15 +333,15 @@ button {
     }
 }
 
-@media only screen and (max-width: 789px) {
+@media only screen and (max-width: 589px) {
     .elements {
-        margin-left: 100px;
+        margin-left: 140px;
         width: 170px;
     }
 
     .container {
         position: absolute;
-        top: 84%;
+        top: 105%;
       left: 30%;
       padding-top: 15px;
     }
