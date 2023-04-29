@@ -333,3 +333,33 @@ button {
     }
 }
 
+@media only screen and (max-width: 789px) {
+    .elements {
+        margin-left: 100px;
+        width: 170px;
+    }
+
+    .container {
+        position: absolute;
+        top: 84%;
+      left: 30%;
+      padding-top: 15px;
+    }
+
+    .fc-fortune {
+      
+        padding: .75em 1.5em .75em 3.75em;
+        text-align: center;
+        width: 17em;
+        margin-left: 45px;
+       
+    }
+
+    .right {
+        border-radius: 1em 9em 7em 1em / 50%;
+    }
+
+    .left {
+        border-radius: 11em 1em 1em 7em / 50%;
+    }
+}
