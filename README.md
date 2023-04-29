@@ -3,11 +3,11 @@ https://marrkponce.github.io/fortune-Cookie.github.io/
 
 OBJECTIVE:
 
--Build a message generator program using Javascript
--Use Git version control
--Use command line
--Develop locally on your computer (used VScode)
--Message should use at least 3 random words
+*Build a message generator program using Javascript
+*Use Git version control
+*Use command line
+*Develop locally on your computer (used VScode)
+*Message should use at least 3 random words
 
 Theme:
 
