@@ -1,2 +1,2 @@
 # Fortune-Cookie-Teller
-https://marrkponce.github.io/fortuneCookie.github.io/
+https://marrkponce.github.io/fortune-Cookie.github.io/
