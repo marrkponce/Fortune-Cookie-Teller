@@ -335,7 +335,7 @@ button {
 
 @media only screen and (max-width: 589px) {
     .elements {
-        margin-left: 140px;
+        margin-left: 110px;
         width: 170px;
     }
 
@@ -351,7 +351,7 @@ button {
         padding: .75em 1.5em .75em 3.75em;
         text-align: center;
         width: 17em;
-        margin-left: 45px;
+        margin-left: 50px;
        
     }
 
