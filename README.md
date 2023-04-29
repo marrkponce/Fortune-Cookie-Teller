@@ -3,7 +3,15 @@ https://marrkponce.github.io/fortune-Cookie.github.io/
 
 OBJECTIVE:
 
-Create a fortune cookie that displays a fortune to the user with a click of a button.
+-Build a message generator program using Javascript
+-Use Git version control
+-Use command line
+-Develop locally on your computer (used VScode)
+-Message should use at least 3 random words
+
+Theme:
+
+Fortune cookie that displays a fortune to the user with a click of a button.
 
 7 Problems to Solve:
 
